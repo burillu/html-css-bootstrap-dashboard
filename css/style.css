@@ -9,7 +9,6 @@
 }
 
 .my-sidebar{
-    width: 150px;
     height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--my-dark-blue);
@@ -24,7 +23,7 @@ main, main>div{
     height: 100%;
 }
 .main-content{
-    width: calc(100% - 150px);
+    width: 100%
 }
 
 /* my-backgrounds */
@@ -34,4 +33,15 @@ main, main>div{
 }
 .my-bg-blue{
     background-color: var(--my-blue-bar);
+}
+
+/* media queries */
+
+/* large */
+
+@media  screen and (min-width:992px) {
+    .my-sidebar-lg{
+        width: 150px;
+    }
+    
 }
