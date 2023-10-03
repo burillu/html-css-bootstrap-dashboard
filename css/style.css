@@ -1,3 +1,37 @@
-body{
-    background-color: aquamarine;
+:root {
+	--my-dark-blue: #0f263d;
+	--my-blue-bar: #1b72e8;
+}
+
+.my-wrapper-100vh{
+    height: 100vh;
+    width: 100%;
+}
+
+.my-sidebar{
+    width: 150px;
+    height: 100%;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--my-dark-blue);
+}
+
+/* header */
+header>div>div{
+    height: 70px;
+}
+/* main */
+main, main>div{
+    height: 100%;
+}
+.main-content{
+    width: calc(100% - 150px);
+}
+
+/* my-backgrounds */
+
+.my-bg-dark-blue{
+    background-color: var(--my-dark-blue);
+}
+.my-bg-blue{
+    background-color: var(--my-blue-bar);
 }
