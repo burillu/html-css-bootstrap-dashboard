@@ -36,7 +36,9 @@ main, main>div{
 .main-content{
     width: 100%
 }
-
+.my-offcanvas.offcanvas{
+    width: 700px;
+}
 /* my-backgrounds */
 
 .my-bg-dark-blue{
