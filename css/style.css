@@ -3,6 +3,14 @@
 	--my-blue-bar: #1b72e8;
 }
 
+/* general */
+header img{
+    height: 100%;
+    width: 100%;
+}
+#logo-mobile{
+    height: 50px;
+}
 .my-wrapper-100vh{
     height: 100vh;
     width: 100%;
@@ -13,7 +21,9 @@
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--my-dark-blue);
 }
-
+/* .my-logo-container{
+    width: 100px;
+} */
 /* header */
 header>div>div{
     height: 70px;

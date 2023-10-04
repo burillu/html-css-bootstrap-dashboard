@@ -2,156 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Michele Ebau">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Michele Ebau">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Dashboard</title>
 </head>
 
 <body>
-    <div class="my-wrapper-100vh">
-        <header class="border">
-            <div class="container-fluid">
-                <div class="row align-content-center">
-                    <dv class="col">1</dv>
-                    <dv class="col">2</dv>
-                    <dv class="col">3</dv>
-                </div>
+  <div class="my-wrapper-100vh">
+    <header class="border">
+      <div class="container-fluid">
+        <div class="row align-content-center">
+          <dv class="col-auto">
+            <div class="my-logo-container">
+              <img src="img/mobile-logo.png" alt="logo-mobile" class="d-lg-none" id="logo-mobile">
+              <img src="img/logo.svg" alt="logo large" class="d-none d-lg-block">
             </div>
-        </header>
-        <main class="" id="">
-            <div class="d-flex">
-                <!-- sidebar -->
-                <div class="my-sidebar my-sidebar-lg text-white" id="sidebar">
-                    <div class=" h-100 container-fluid">
-                        <div class=" h-100 row">
-                            <div class="col-4 col-sm-12">
-                                <div class=" d-flex h-100 flex-column justify-content-between">
-                                    <div class="sidebar-top">
-                                         top
-                                    </div>
-                                    <div class="sidebar-bottom">
-                                        bot
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </dv>
+          <dv class="col">
+            <input type="search" class="form-control" name="search" id="search" placeholder="&#128269 cerca qualcosa"
+              disabled>
+          </dv>
+          <dv class="col-auto">
+            <ul class="list-group list-group-horizontal border-0">
+              <li class="list-group-item d-none d-lg-block">An item</li>
+              <li class="list-group-item d-none d-lg-block">A second item</li>
+              <li class="list-group-item d-none d-lg-block">A third item</li>
+              <li class="list-group-item text-info"><i class="fa-solid fa-bell"></i></li>
+            </ul>
+          </dv>
+        </div>
+      </div>
+    </header>
+    <main class="" id="">
+      <div class="d-flex">
+        <!-- sidebar -->
+        <div class="my-sidebar my-sidebar-lg text-white" id="sidebar">
+          <div class=" h-100 container-fluid">
+            <div class=" h-100 row">
+              <div class="col-4 col-sm-12">
+                <div class=" d-flex h-100 flex-column justify-content-between">
+                  <div class="sidebar-top">
+                    top
+                  </div>
+                  <div class="sidebar-bottom">
+                    bot
+                  </div>
                 </div>
-                <div class="main-content" id="main-content">
-
-                    <div class="container-fluid">
-                        <!-- top-main -->
-                        <div class="row bg-primary text-white" id="top-main">
-                            <div class="col-8 col-md-12">
-                                <div class="row">
-                                    <div class="col-12 col-md-4 col-lg-6">Boolean</div>
-                                    <div class="col-12 col-md-4 col-lg-4">121</div>
-                                    <div class="col-12 col-md-4 col-lg-2">Nuovo studente</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- center-main -->
-                        <div id="center-main" class="row py-4">
-                            <div class="col-12 col-lg-8">
-                                <div class="card" >
-                                    <div class="card-header">
-                                      Prossime Classi
-                                    </div>
-                                    <table class="table table-hover">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col">data inizio</th>
-                                        <th scope="col">RDI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                  </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        F.A.Q.
-                                    </div>
-                                    <!-- accordion -->
-                                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                              Accordion Item #1
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                              Accordion Item #2
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                              Accordion Item #3
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                right
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+              </div>
             </div>
-        </main>
-    </div>
+          </div>
+        </div>
+        <div class="main-content" id="main-content">
+
+          <div class="container-fluid">
+            <!-- top-main -->
+            <div class="row bg-primary text-white" id="top-main">
+              <div class="col-8 col-md-12">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-6">Boolean</div>
+                  <div class="col-12 col-md-4 col-lg-4">121</div>
+                  <div class="col-12 col-md-4 col-lg-2">Nuovo studente</div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- center-main -->
+            <div id="center-main" class="row py-4">
+              <div class="col-12 col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    Prossime Classi
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">data inizio</th>
+                        <th scope="col">RDI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    F.A.Q.
+                  </div>
+                  <!-- accordion -->
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body.
+                          Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.
+                          Nothing more exciting happening here in terms of content, but just filling up the space to
+                          make it look, at least at first glance, a bit more representative of how this would look in a
+                          real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                right
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
