@@ -5,6 +5,9 @@
 }
 
 /* general */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header img{
     height: 100%;
     width: 100%;
