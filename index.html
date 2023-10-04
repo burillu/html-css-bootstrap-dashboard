@@ -77,12 +77,36 @@
 
           <div class="container-fluid">
             <!-- top-main -->
-            <div class="row bg-primary text-white" id="top-main">
+            <div class="row bg-primary text-white fw-bold" id="top-main">
               <div class="col-8 col-md-12">
-                <div class="row">
-                  <div class="col-12 col-md-4 col-lg-6">Boolean</div>
-                  <div class="col-12 col-md-4 col-lg-4">121</div>
-                  <div class="col-12 col-md-4 col-lg-2">Nuovo studente</div>
+                <div class="row py-2">
+                  <div class="col-12 col-md-4 col-lg order-md-last">
+                    <span class="">Nuovo studente</span><a href="#" class="ms-2 btn btn-outline-light">+</a>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-6">Boolean <span
+                      class="badge rounded-pill my-blue-badge">Primary</span>
+                    <nav class="text-white" style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#"><span class="badge rounded-pill my-blue-badge">3
+                              app</span></a>
+                            </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          <span class="badge rounded-pill my-blue-badge me-1">3
+                            app</span>
+                            <span class="badge rounded-pill my-blue-badge me-1">3
+                              app</span>
+                              <span class="badge rounded-pill my-blue-badge me-1">3
+                                app</span>
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <span>Studenti online negli utlimi 30 minuti</span>
+                    <div class="fs-3">125</div>
+                  </div>
+
                 </div>
 
               </div>
@@ -92,7 +116,7 @@
             <div id="center-main" class="row py-4">
               <!-- left -->
               <div class="col-12 col-lg-8">
-                <div class="card">
+                <div class="card my-2">
                   <div class="card-header">
                     Prossime Classi
                   </div>
@@ -184,7 +208,7 @@
               </div>
               <!-- right -->
               <div class="col-12 col-lg-4">
-                <div class="card">
+                <div class="card my-2">
                   <div class="card-header"> Todo</div>
                   <div class="card-body">
                     <ul class="list-group">
