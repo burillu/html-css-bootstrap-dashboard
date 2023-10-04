@@ -104,12 +104,12 @@
                 <div class="row py-2">
                   <div class="col-12 col-md-4 col-lg order-md-last">
                     <span class="">Nuovo studente</span>
-                    <!-- offcanvas -->
+                    
 
                     <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-
-                    <div class=" offcanvas my-offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                      <!-- offcanvas -->
+                      <div class=" offcanvas my-offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                       aria-labelledby="offcanvasRightLabel">
                       <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -229,7 +229,7 @@
 
                         </div>
                         <!-- checkbox -->
-                        <div class="form-check">
+                        <div class="form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="agree" id="flexCheckDefault">
                           <label class="form-check-label" for="flexCheckDefault">
                             Seleziona per proseguire
@@ -284,35 +284,31 @@
                   <div class="card-header">
                     Prossime Classi
                   </div>
-                  <table class="table table-hover">
+                  <table class="table table-hover fs-6">
                     <thead>
                       <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">data inizio</th>
-                        <th scope="col">RDI</th>
+                        <th class="col-6 col-md-5 col-lg-4 col-xl-6" scope="col">Nome</th>
+                        <th class="d-none d-md-table-cell col ms-auto" scope="col">Data inizio</th>
+                        <th class="d-none d-md-table-cell col" scope="col">RDI</th>
                         <th scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
+                        <th class="col-auto" scope="col">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
+                      <!-- first row -->
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td class="col-6 col-md-5 col-lg-4 col-xl-6" scope="row"><span class=""> <img src="img/class-avatar.jpg" alt="class-avatar" class="my-img-avatar rounded-5 mx-1"> Classe 75</span></td>
+                        <td class="d-none d-md-table-cell col ms-auto">15 feb 2023</td>
+                        <td class="d-none d-md-table-cell col">20%</td>
+                        <td ><span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="col-auto">
+                          <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                          <button class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
                       </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
+                      
+                      
                     </tbody>
                   </table>
                 </div>

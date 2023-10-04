@@ -39,6 +39,9 @@ main, main>div{
 .my-offcanvas.offcanvas{
     width: 700px;
 }
+img.my-img-avatar{
+    width: 30px;
+}
 /* my-backgrounds */
 
 .my-bg-dark-blue{
