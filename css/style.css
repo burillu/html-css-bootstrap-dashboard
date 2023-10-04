@@ -48,6 +48,12 @@ main, main>div{
 img.my-img-avatar{
     width: 30px;
 }
+.my-btn{
+    cursor: pointer;
+}
+.my-sidebar .my-btn:hover{
+    background-color: #ffffff91;
+}
 /* my-backgrounds */
 
 .my-bg-dark-blue{
